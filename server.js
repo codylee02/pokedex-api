@@ -11,7 +11,7 @@ const app = express();
 
 app.use(morgan("dev"));
 app.use(helmet());
-app.use(helmet.hidePoweredBy());
+
 app.use(cors());
 
 app.use(function validateBearerToken(req, res, next) {
