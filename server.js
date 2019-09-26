@@ -59,10 +59,6 @@ function handleGetTypes(req, res) {
   res.json(validTypes);
 }
 
-app.get('/', function handleHomePage(req, res) {
-  res.json('Hello')
-})
-
 app.get("/types", handleGetTypes);
 
 app.get("/pokemon", function handleGetPokemon(req, res) {
@@ -91,3 +87,6 @@ const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log("started")
 });
+
+
+
